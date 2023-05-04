@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <meta name="author" content="Jorge Luis Antonio Contreras">
+         <!-- Bootstrap  -->
+         <link rel="stylesheet" href="../content/bootstrap/bootstrap.min.css">
+         <!-- jquery  -->
+         <script src="../content/jquery/jquery-3.6.1.slim.js" ></script> 
+         <title>BooksApp</title>
+     </head>
+     <body> 
+        
+        <div class="container ">
+            <div class="input-group mt-3 mr-5">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" id="search" type="button">Search</button>
+                </div>
+                <input type="text" class="form-control"  id="searchBook" placeholder="" aria-label="" aria-describedby="basic-addon1">
+              </div>
+            <div class="row  mt-5" >       
+                <div class="col-12" >
+                    <table class="table table-sm table-white">
+                        <thead>
+                          <tr>
+                            <th scope="col">Libro</th>
+                            <th scope="col">Universidad</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="tbodyBooks">
+                       
+                        </tbody>
+                      </table>          
+                </div>
+ </div>
+
+</div>     
+     </body>
+     <script src="../components/books/indexBookStudents.js" type="module"></script>

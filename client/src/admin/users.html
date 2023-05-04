@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <meta name="author" content="Jorge Luis Antonio Contreras">
+         <!-- Bootstrap  -->
+         
+         <link rel="stylesheet" href="../content/bootstrap/bootstrap.min.css">
+         <!-- jquery  -->
+         <script src="../content/jquery/jquery-3.6.1.slim.js" ></script> 
+         <title>BooksApp</title>
+     </head>
+     <body> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="books.html">Books</a>
+           <a class="nav-item nav-link" href="users.html">Users</a>
+           <a class="nav-item nav-link" href="account.html">Account</a>
+            <a class="nav-item nav-link" href="../index.html">Log Out</a>
+          </div>
+        </div>
+      </nav>
+        <div class="container ">
+          <div class="card mt-3 mb-4 ">
+            <h2 class="card-header text-center">List of users</h2>
+            <div class="card-body">
+
+            <div class="row  mt-5" >       
+        
+               
+                <div class="col-12" >
+                    <table class="table table-sm table-white">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Rol</th>
+                            <th scope="col"></th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody id="tbodyUsers">
+                       
+                        </tbody>
+                      </table>          
+                </div>
+ </div>
+
+
+        </div>    
+    </div>  
+</div>     
+     </body>
+     
+     <script src="../components/users/indexUsers.js" type="module"></script>

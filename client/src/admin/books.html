@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <meta name="author" content="Jorge Luis Antonio Contreras">
+         <!-- Bootstrap  -->
+         <link rel="stylesheet" href="../content/bootstrap/bootstrap.min.css">
+         <!-- jquery  -->
+         <script src="../content/jquery/jquery-3.6.1.slim.js" ></script>
+       
+         <title>BooksApp</title>
+     </head>
+     <body> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav justify-content-center">
+            <a class="nav-item nav-link active" href="books.html">Books</a>
+            <a class="nav-item nav-link" href="users.html">Users</a>
+            <a class="nav-item nav-link" href="account.html">Account</a>
+            <a class="nav-item nav-link" href="../index.html">Log Out</a>
+          </div>
+        </div>
+      </nav>
+        <div class="container ">
+          
+        
+
+          <div class="card mt-3 mb-4 ">
+            <h2 class="card-header text-center">List of books</h2>
+            <div class="card-body">
+
+            <div class="row  mt-5" >       
+            <div class="col-3">  
+                <div class="row" > 
+                    <label>Book Name: </label>
+                    <input  type='text' class='form-control mb-2 mt-2'  id='txtBookName' >
+                    <label>Description: </label>
+                    <input  type='text' class='form-control mb-2 mt-2'  id='txtDescription'>
+                    <label>Subject: </label>
+                    <input  type='text' class='form-control mb-2 mt-2'  id='txtSubject' >
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">PDF</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class='col text-center mb-3'><button  class='btn btn-primary float-sm-right' id='btnAddBook' >Add Book </button></div>
+                </div>
+            </div>
+               
+                <div class="col-9" >
+                    <table class="table table-sm table-white">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Book Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="tbodyBooks">
+                       
+                        </tbody>
+                      </table>          
+                </div>
+ </div>
+
+
+        </div>    
+    </div>  
+</div>     
+     </body>
+     
+     <script src="../components/books/indexBooks.js" type="module"></script>
+ 
